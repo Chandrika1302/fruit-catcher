@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <title>
+        <% if(!locals.title) title='Fruit Catcher!' %>
+            <%=title%>
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="heading">Fruit Catcher</h1>
+        <nav class="navbar">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
+            <% if(!locals.username) {%>
+                <a class="nav-link" href="/signup">Sign Up</a>
+                <a class="nav-link" href="/login">Log In</a>
+                <% } else{%>
+                    <a class="nav-link" href="/game">Game</a>
+                    <a class="nav-link" href="/profile">Profile</a>
+                    <a class="nav-link" href="/logout">Log Out</a>
+                    <% } %>
+        </nav>
+    </header>
+    <main>

@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#bin {
+  position: absolute;
+  background: url("./assets/bin.png") no-repeat;
+  background-size: contain;
+  bottom: 0;
+  padding: 4rem 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#fruit {
+  position: absolute;
+  background: url("./assets/trash.png") no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  right: 50%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.score-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modal {
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  background-color: hsl(240, 25%, 50%);
+  color: white;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0rem black;
+  transform: translateX(-50%);
+}
+.modal button {
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.show {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

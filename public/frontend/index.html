@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Fruit Catcher</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/frontend/index.js" defer type="module"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="heading">Fruit Catcher</h1>
+        <nav class="navbar">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
+            <a class="nav-link" href="/game">Game</a>
+            <a class="nav-link" href="/profile">Profile</a>
+            <a class="nav-link" href="/logout">Log Out</a>
+        </nav>
+    </header>
+    <div class="score-bar">
+        <div id="score">Score: 0</div>
+        <div id="time">15</div>
+        <div id="high-score">HighScore: Loading...</div>
+    </div>
+    <main id="main">
+        <div id="fruit" draggable="true"></div>
+        <div id="bin"></div>
+    </main>
+    <section id="loading-screen" class="modal">
+        Loading...
+    </section>
+    <section class="modal hidden" id="gameover-screen">
+        <p>hidden content</p>
+        <button onclick="location.reload()">Play Again?</button>
+    </section>
+</body>
+
+</html>

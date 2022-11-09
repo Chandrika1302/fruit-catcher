@@ -1,0 +1,19 @@
+<%-include('header')%>
+
+    <%-include('footer')%>
+        <script>
+            confirmDeletion();
+            async function confirmDeletion() {
+                const userInput = confirm('Do You want to delete your Account?');
+                if (!userInput) { window.location.href = "/profile"; return }
+                await fetch('/profile/delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({})
+                })
+                window.location.href = "/login";
+
+            }
+        </script>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.header {
+  background-color: #61764B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.error {
+  margin-top: 1rem;
+  color: red;
+}
+.navbar {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.nav-link:hover {
+  background-color: #9BA17B;
+ 
+  
+}
+.nav-link:visited {
+  color: white;
+}
+.footer {
+  background-color: black;
+  border: 1px solid gray;
+  color: white;
+  padding: 0.5rem;
+}
+
+.intro-heading {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+.intro-list {
+  text-align: left;
+  list-style-position: inside;
+}
+.intro-list li {
+  padding: 1rem 2rem;
+}
+
+.about-para {
+  text-align: justify;
+  padding: 1rem 4rem;
+}
+
+.form h2 {
+  padding: 0.5rem;
+}
+.form fieldset {
+  max-width: max-content;
+  text-align: right;
+  margin: auto;
+  padding: 1rem;
+}
+.form label {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.form input {
+  display: inline-block;
+  padding: 0.5rem;
+}
+.form button {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+.user-profile {
+  text-align: left;
+  margin-left: 4rem;
+}
+.user-profile h2 {
+  text-align: center;
+  padding: 1rem;
+}
+.user-profile li {
+  padding: 0.5rem;
+}
+.user-profile .link {
+  display: block;
+  margin: 1rem auto;
+  width: max-content;
+  font-size: 3rem;
+  background-color: hsl(0, 0%, 85%);
+  border:1px solid gray;
+  text-decoration: none;
+  color:black;
+  padding: 1rem;
+}
+.user-profile .link:visited {
+    color: black;
+}
+
+.user-profile .user-profile-main{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 9rem;
+}
+
+
+.scores-table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.scores-table caption{
+  padding:0.5rem;
+}
+
+.scores-table th {
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 90%);
+}
+.scores-table th,
+.scores-table td {
+  border: 1px solid black;
+}

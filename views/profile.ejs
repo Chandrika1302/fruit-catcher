@@ -1,0 +1,58 @@
+<%-include('header')%>
+    <div class="user-profile">
+
+        <h2>
+            <%= locals.username %>'s Profile
+        </h2>
+        <div class="user-profile-main">
+
+            <section>
+                <h3>
+                    User Info:
+                </h3>
+                <ul>
+                    <li>Username: <%=locals.username %>
+                    </li>
+                    <li>Email: <%=locals.email %>
+                    </li>
+                    <li>HighScore: <%=locals.highscore %>
+                    </li>
+                    <li><a href="/profile/delete" >Delete Account?</a></li>
+                   
+                </ul>
+            </section>
+            <section>
+
+
+                <table class="scores-table">
+                    <caption>
+                        Last 5 Scores
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <% for(const [index,score] of locals.scores.entries()){ %>
+                        <tr>
+                            <td>
+                                <%= index+1 %>
+                            </td>
+                            <td>
+                                <%=score %>
+                            </td>
+
+                        </tr>
+                        <% } %>
+                </table>
+            </section>
+        </div>
+
+        <a class="link" href="/game"> Play Game</a>
+
+
+    </div>
+
+
+    <%-include('footer')%>

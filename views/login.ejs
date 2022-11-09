@@ -1,0 +1,23 @@
+<%-include('header')%>
+<% locals.errors ?? (locals.errors=[]) %>
+
+    <form method="post" class="form">
+        <h2>Login</h2>
+        <fieldset>
+            <label>Username:
+                <input type="text" name="username" required>
+            </label>
+            <label>Password:
+                <input type="text" name="password" required>
+            </label>
+        </fieldset>
+        <ul>
+            <% for(const error of locals.errors) { %>
+                <li class="error">
+                    <%= error %>
+                </li>
+                <% } %>
+        </ul>
+        <button>Submit</button>
+    </form>
+    <%-include('footer')%>
