@@ -1,9 +1,8 @@
 # catch-the-trash
 
-A simple game where you have to catch the trash before it lands somewhere other than the bin
+A simple game where you have to catch the fruit before it lands somewhere other than the bin
 
-# Live Link:
-<a href="https://catch-the-trash.onrender.com/profile" target="_blank">Here</a>
+
 
 # How to run
 1. A .env file is required at the project root with the following structure:
