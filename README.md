@@ -32,7 +32,4 @@ TOKEN_KEY=any_random_string_for_encryption_purposes
 + vanilla CSS
 
 
-# Motivation
-The project has been developed party for the fulfillment of my academic obligations and party to satify my curiosity to build a full stack app. Feel free to ping me regarding any queries.
-
 
